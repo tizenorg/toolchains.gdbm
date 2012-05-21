@@ -1,0 +1,17 @@
+* Mon May 30 2011 Carsten Munk <carsten@maemo.org> - 1.8.3
+- Fix ARM build: Drop awkward part of gdbm-destdir.patch which overrode
+  autoconf details and hardcoded X86 CFLAGS. Verified to work on both 
+  IA and ARM.
+
+* Sat Feb 27 2010 Anas Nashif <anas.nashif@intel.com> - 1.8.3
+- Remove timestamp from binaries to avoid  rebuilds
+
+* Tue Feb 09 2010 Anas Nashif <anas.nashif@intel.com> - 1.8.3
+- Use spectacle
+- Force compile with optimized CFLAGS
+
+* Sat Feb 07 2009 Arjan van de Ven <arjan@linux.intel.com> 1.8.3
+- Use specbuilder
+
+* Thu Jan 08 2009 Anas Nashif <anas.nashif@intel.com> 1.8.3
+- Spec cleanup
