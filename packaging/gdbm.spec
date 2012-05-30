@@ -14,6 +14,7 @@ License:    GPLv2+ and LGPLv2+
 URL:        http://directory.fsf.org/GNU/gdbm.html
 Source0:    http://ftp.gnu.org/pub/gnu/gdbm/gdbm-%{version}.tar.bz2
 Source100:  gdbm.yaml
+Source1001: packaging/gdbm.manifest 
 Patch0:     gdbm-%{version}.dif
 Patch1:     gdbm-protoize_dbm_headers.patch
 Patch2:     gdbm-prototype_static_functions.patch
@@ -58,6 +59,7 @@ to develop applications that require these.
 # << setup
 
 %build
+cp %{SOURCE1001} .
 # >> build pre
 aclocal
 autoreconf --force --install
@@ -92,6 +94,7 @@ rm -rf %{buildroot}
 
 
 %files
+%manifest gdbm.manifest
 %defattr(-,root,root,-)
 # >> files
 %doc COPYING
@@ -101,6 +104,7 @@ rm -rf %{buildroot}
 
 
 %files devel
+%manifest gdbm.manifest
 %defattr(-,root,root,-)
 # >> files devel
 %{_prefix}/%{_lib}/libgdbm.so
