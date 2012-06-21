@@ -1,17 +1,14 @@
-* Mon May 30 2011 Carsten Munk <carsten@maemo.org> - 1.8.3
-- Fix ARM build: Drop awkward part of gdbm-destdir.patch which overrode
-  autoconf details and hardcoded X86 CFLAGS. Verified to work on both 
-  IA and ARM.
+* Sun Jun 24 2012 Anas Nashif <anas.nashif@intel.com> 637e5c0
+- re-add manifest
 
-* Sat Feb 27 2010 Anas Nashif <anas.nashif@intel.com> - 1.8.3
-- Remove timestamp from binaries to avoid  rebuilds
+* Thu Jun 21 2012 Anas Nashif <anas.nashif@intel.com> 79a9fd4
+- fixed requirements and add ndbm.h for perl
 
-* Tue Feb 09 2010 Anas Nashif <anas.nashif@intel.com> - 1.8.3
-- Use spectacle
-- Force compile with optimized CFLAGS
+* Wed May 30 2012 Ryan Ware <ryan.r.ware@intel.com> 2f3f9e4
+- Add default Smack manifest for gdbm.spec
 
-* Sat Feb 07 2009 Arjan van de Ven <arjan@linux.intel.com> 1.8.3
-- Use specbuilder
+* Mon May 21 2012 Kim Kibum <kb0929.kim@samsung.com> 1160f19
+- Upload Tizen:Base source
+[ Hyesook Choi ]
+- Initial empty repository
 
-* Thu Jan 08 2009 Anas Nashif <anas.nashif@intel.com> 1.8.3
-- Spec cleanup
