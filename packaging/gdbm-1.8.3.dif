@@ -1,5 +1,5 @@
---- gdbmopen.c
-+++ gdbmopen.c	2005/08/23 08:25:23
+--- a/gdbmopen.c
++++ b/gdbmopen.c	2005/08/23 08:25:23
 @@ -212,7 +212,7 @@
  	file_block_size = block_size;
  
@@ -9,8 +9,8 @@
        if (dbf->header == NULL)
  	{
  	  gdbm_close (dbf);
---- gdbmreorg.c
-+++ gdbmreorg.c	2005/08/24 16:07:12
+--- a/gdbmreorg.c
++++ b/gdbmreorg.c	2005/08/24 16:07:12
 @@ -112,7 +112,7 @@
  
    /* Get the mode for the old file and open the new database. */
@@ -20,8 +20,8 @@
  		       fileinfo.st_mode, dbf->fatal_err);
  
    if (new_dbf == NULL)
---- Makefile.in
-+++ Makefile.in	2005/08/23 08:25:23
+--- a/Makefile.in
++++ b/Makefile.in	2005/08/23 08:25:23
 @@ -15,8 +15,8 @@
  INSTALL_DATA = @INSTALL_DATA@
  
@@ -95,8 +95,8 @@
  
  lintgdbm: 
  	lint $(DEFS) $(LFLAGS) $(DBM_CF) $(NDBM_CF) $(GDBM_CF) testgdbm.c
---- systems.h
-+++ systems.h	2005/08/23 08:25:23
+--- a/systems.h
++++ b/systems.h	2005/08/23 08:25:23
 @@ -23,7 +23,7 @@
                  Computer Science Department
                  Western Washington University
