@@ -1,7 +1,7 @@
 * Mon May 30 2011 Carsten Munk <carsten@maemo.org> - 1.8.3
 - Fix ARM build: Drop awkward part of gdbm-destdir.patch which overrode
   autoconf details and hardcoded X86 CFLAGS. Verified to work on both 
-  IA and ARM.
+  IA and ARM. 
 
 * Sat Feb 27 2010 Anas Nashif <anas.nashif@intel.com> - 1.8.3
 - Remove timestamp from binaries to avoid  rebuilds
