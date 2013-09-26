@@ -77,6 +77,8 @@ rm -rf %{buildroot}
 %make_install
 
 # >> install post
+mkdir -p %{buildroot}/usr/share/license
+cp COPYING %{buildroot}/usr/share/license/%{name}
 %make_install
 
 %docs_package
@@ -96,6 +98,7 @@ rm -rf %{buildroot}
 %defattr(-,root,root,-)
 # >> files
 %doc COPYING
+/usr/share/license/%{name}
 %{_prefix}/%{_lib}/libgdbm.so.3
 %{_prefix}/%{_lib}/libgdbm.so.3.0.0
 # << files
