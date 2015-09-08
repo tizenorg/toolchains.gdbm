@@ -1,5 +1,5 @@
---- testdbm.c
-+++ testdbm.c
+--- a/testdbm.c
++++ b/testdbm.c
 @@ -31,6 +31,9 @@
  #include "autoconf.h"
  
@@ -67,8 +67,8 @@
  	  key_data.dptr = key_line;
  	  key_data.dsize = strlen (key_line)+1;
  	  if (delete (key_data) != 0)
---- testgdbm.c
-+++ testgdbm.c
+--- a/testgdbm.c
++++ b/testgdbm.c
 @@ -37,10 +37,22 @@
  
  #include "getopt.h"
@@ -92,8 +92,8 @@
  gdbm_file_info *gdbm_file;
  
  /* Debug procedure to print the contents of the current hash bucket. */
---- testndbm.c
-+++ testndbm.c
+--- a/testndbm.c
++++ b/testndbm.c
 @@ -42,6 +42,9 @@
  #if HAVE_FCNTL_H
  #include <fcntl.h>

@@ -1,5 +1,5 @@
---- dbm.h
-+++ dbm.h
+--- a/dbm.h
++++ b/dbm.h
 @@ -1,7 +1,7 @@
  /* dbm.h  -  The include file for dbm users.  */
  
@@ -49,9 +49,9 @@
 +extern datum	nextkey __P((datum key));
  
 -extern int	dbmclose ();
-+extern int	dbmclose __P((void));
---- ndbm.h
-+++ ndbm.h
++extern int	dbmclose __P((DBM *));
+--- a/ndbm.h
++++ b/ndbm.h
 @@ -1,7 +1,7 @@
  /* ndbm.h  -  The include file for ndbm users.  */
  
